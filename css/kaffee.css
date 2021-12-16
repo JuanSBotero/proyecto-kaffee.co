@@ -17,6 +17,7 @@
 
 main{
     display: grid;
+    background-color: rgb(173, 173, 173);
     grid-template-columns: 100%;
     grid-template-rows: 30% 30% 30%;
     grid-template-areas: "area1"
@@ -33,17 +34,31 @@ header{
 
 nav{
     background-color: black;
+    height: 100px;
+    position: sticky;
+    top: 0px;
 }
 
-main{
-    background-color: rgb(173, 173, 173);
-}
 
 footer{
     background-color: black;
 }
 
+h1{
+    color: white;
+}
 
+h2{
+    color: white;
+}
+
+h3{
+    color: white;
+}
+
+p{
+    color: white;
+}
 
 ul{
     display: flex;
@@ -68,8 +83,24 @@ img{
     height: auto;
 }
 
-h1{
-    color: white;
+.parrafos{
+    font-size: 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.estiloSections{
+    height: 30%;
+    background-color: rgb(240, 245, 175);
+    margin-bottom: 10%;
+}
+
+.titulos{
+    font-size: 60px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
 }
 
 
@@ -143,4 +174,5 @@ h1{
         justify-content: space-evenly;
         align-content: space-around;
 
+    }
 }
