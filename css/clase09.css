@@ -1,0 +1,146 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+#grilla{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 300px 150px 1800px 200px;
+    grid-template-areas: "header"
+                         "nav"
+                         "main"
+                         "footer";
+
+}
+
+main{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 30% 30% 30%;
+    grid-template-areas: "area1"
+                         "area2"
+                         "area3";
+    justify-content: space-evenly;
+
+
+}
+
+header{
+    background-color: brown;
+}
+
+nav{
+    background-color: black;
+}
+
+main{
+    background-color: rgb(173, 173, 173);
+}
+
+footer{
+    background-color: black;
+}
+
+
+
+ul{
+    display: flex;
+    height: 100%;
+    /*
+    flex-direction: column;
+    list-style-type: none;
+    justify-content: space-evenly;
+    align-items: center;
+    */
+    list-style-type: none;
+}
+
+li{
+    font-size: 20px;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+h1{
+    color: white;
+}
+
+
+@media only screen and (max-width: 600px){
+    ul{
+        flex-direction: column;
+        list-style-type: none;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+     
+
+}
+
+@media only screen and (min-width: 600px){
+    #grilla{
+        /*
+        display: grid;
+        grid-template-columns: 100%;
+        */
+        grid-template-rows: 300px 150px 900px 200px;
+        grid-template-areas: "header"
+                             "nav"
+                             "main"
+                             "footer";
+    
+    }
+    
+    main{
+        /*
+        display: grid;
+        */
+        grid-template-columns: 45% 45%;
+        grid-template-rows: 45% 45%;
+        grid-template-areas: "area1 area2"
+                            "area3 area3";
+        justify-content: space-evenly;
+        align-content: center;
+
+        
+    }
+
+    ul{
+        flex-direction: row;
+        /*
+        list-style-type: none;
+        */
+        justify-content: space-evenly;
+        align-items: center;
+    }
+}
+
+@media only screen and (min-width: 992px){
+
+    #grilla{
+
+        grid-template-rows: 300px 150px 3000px 200px;
+        grid-template-areas: "header"
+                             "nav"
+                             "main"
+                             "footer";
+    }
+    
+    main{
+        grid-template-columns: 100%;
+        grid-template-rows: 30% 30% 30%;
+        grid-template-areas: "area1"
+                            "area2"
+                            "area3";
+        justify-content: space-evenly;
+        align-content: space-around;
+
+}
